@@ -278,15 +278,6 @@ nav ul li a {
     display: inline-block;
 }
 
-.about{
-    background-color: #ff0229;
-    text-align: center;
-    position: relative;
-    margin-top: 20px;
-    /*top: 160%;*/
-    /*left: 10%;*/
-    /*right: 10%;*/
-}
 
 .product {
     position: absolute;
@@ -301,7 +292,6 @@ nav ul li a {
 [type=radio] {
     display: none;
 }
-
 .about-head{
     position: relative;
     top: 150px;
