@@ -144,6 +144,7 @@ nav ul li a {
 
 .align1{
     margin-left: 300px;
+    margin-top: -80px;
 }
 .align2{
     position: relative;
@@ -287,18 +288,56 @@ nav ul li a {
 }
 
 .background{
- 
+
 }
 [type=radio] {
     display: none;
 }
+
+#about{
+    display: block;
+}
+#about-phone{
+    display: none;
+}
+.about-head-phone{
+    color: black;
+    margin-top: 120px;
+    margin-left: 100px;
+    font-family: 'Acme', sans-serif;
+
+ }
+.about-descrpition-phone{
+    width: 500px;
+    margin-left:100px;
+    font-family: 'Itim', cursive;
+
+}
+@media screen and (max-width: 768px) {
+ #about{
+     display: none;
+ }
+    #about-phone{
+        display: block;
+    }
+}
+
+/*.about-background{*/
+/*    background-image: url("../images/about.jpg");*/
+/*    width: 400px;*/
+/*    height: 400px;*/
+/*    position: relative;*/
+/*    margin-left: 300px;*/
+/*    top: 100px;*/
+/*}*/
 .about-head{
     position: relative;
-    top: 150px;
+    top: 120px;
     margin-left: 350px;
     font-family: 'Acme', sans-serif;
     font-size: 80px;
     color: black;
+
 }
 .decription{
     color: black;
@@ -307,6 +346,7 @@ nav ul li a {
     left: 800px;
     font-size:20px;
     font-family: 'Itim', cursive;
+
 
 }
 
@@ -375,6 +415,10 @@ nav ul li a {
         margin-top: 120px;
         height: 30vw;
     }
+}
+
+@media(max-width: 786px){
+
 }
 .main {
     max-height: 550px;;
