@@ -312,6 +312,8 @@ nav ul li a {
 }
 #about-phone{
     display: none;
+    background-image: url("../images/back9.jpg");
+    background-repeat: no-repeat;
 }
 .about-head-phone{
     color: black;
@@ -322,8 +324,10 @@ nav ul li a {
  }
 .about-descrpition-phone{
     width: 500px;
+    height: 500px;
     margin-left:100px;
     font-family: 'Itim', cursive;
+
 
 }
 @media screen and (max-width: 768px) {
@@ -364,6 +368,12 @@ nav ul li a {
     top: -550px;
 }
 
+.slide1{
+    color: black;
+    font-weight: bolder;
+    font-size: 36px;
+    margin-left: 430px;
+}
 #slider {
     height: 25vw;
     position: relative;
@@ -419,15 +429,15 @@ nav ul li a {
 }
 
 #slide1 { background-image: url("../images/slide1.jpg") }
-#slide2 { background-image: url("../images/slide2.jpg")}
-#slide3 { background: #CDDC39 }
-#slide4 { background: #FFC107 }
-#slide5 { background: #FF5722 }
+#slide2 { background-image: url("../images/slide2.jpg");}
+#slide3 { background-image: url("../images/slide3.jpg");}
+#slide4 { background-image: url("../images/slide4.jpg");}
+#slide5 { background-image: url("../images/slide5.jpg") }
 
 @media (max-width:767px)  {
     #slider{
         margin-top: 120px;
-        height: 30vw;
+        height: 40vw;
     }
 }
 
