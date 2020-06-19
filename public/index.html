@@ -16,8 +16,10 @@
     <link href="https://fonts.googleapis.com/css2?family=Ropa+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="js/AdRender.js"></script>
 </head>
-<body>
+<body onload="displayRandomImage()">
 
 <div class="App">
         <header>
@@ -47,8 +49,13 @@
         </h1>
     </header>
 
-
-
+<div class="ad1">
+    <img  id="banner1" >
+</div>
+    <div class="ad2">
+        <img id="banner2" >
+    </div>
+</div>
 <div class="background">
     <div class="flex-container" id="">
         <div class="flip-card align1">
@@ -117,7 +124,7 @@
         </div>
 
         <div class="decription">
-            <p style="color: black;">
+            <p style="color: black;" class="fadeInUp">
                 We are a psychology-based ad company. Digital marketing is driving the world,
                 much small and large business solely depends on ads for their product to reach
                 potential customers this is how businesses grow. So advertisements are one of the
@@ -233,7 +240,7 @@
 
 <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-analytics.js"></script>
-FFFBD2
+
 <!-- Add Firebase products that you want to use -->
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-auth.js"></script>
 <script src="https://www.gstatic.com/firebasejs/7.15.0/firebase-firestore.js"></script>
