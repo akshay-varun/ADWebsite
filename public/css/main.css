@@ -443,7 +443,11 @@ nav ul li a {
 @media(max-width: 786px){
 
 }
-
+.contact{
+    position: relative;
+    left: 200px;
+    top: 60px;
+}
 .footer {
     position: absolute;
     left: 0;
