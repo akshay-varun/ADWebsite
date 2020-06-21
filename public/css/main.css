@@ -157,11 +157,11 @@ nav ul li a {
 
 .align1{
     margin-left: 300px;
-    margin-top: -80px;
 }
 .align2{
     position: relative;
-    left: 430px;
+    left: 100px;
+    top: 20px;
 }
 
 .align3{
@@ -208,8 +208,7 @@ nav ul li a {
      left: 25%;
      top: 100px;*/
     background-color: transparent;
-    width: 250px;
-    height: 290px;
+    width:580px;height:420px;
     border: 1px solid #f1f1f1;
     perspective: 1000px; /* Remove this if you don't want the 3D effect */
 }
