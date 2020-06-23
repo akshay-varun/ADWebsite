@@ -17,6 +17,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Acme&family=Itim&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Ubuntu+Mono:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya:wght@500&display=swap" rel="stylesheet">
     <script type="text/javascript" src="js/AdRender.js"></script>
 </head>
     <body onload="displayRandomImage()">
@@ -50,10 +51,10 @@
         </header>
 
     <div class="ad1">
-        <img id="banner1">
+        <img id="banner1" alt="Add1">
     </div>
         <div class="ad2">
-            <img id="banner2" >
+            <img id="banner2" alt="Add2">
         </div>
     </div>
     <div class="background">
@@ -182,7 +183,32 @@
     </section>
     </div>
     <div class="contact">
+        <h1>Write to us</h1>
         <img src="images/contact.jpg" style="width: 700px;height: 450px;">
+        <form>
+            <label>
+                <input type="text" name="name" value="Your Name"
+                       onblur="if(this.value===''){ this.value='Your Name'; this.style.color='#BBB';}"
+                       onfocus="if(this.value==='Your Name'){ this.value=''; this.style.color='#000';}"
+                       style="color:#BBB;" />
+            </label>
+            <br>
+            <br>
+            <br>
+            <label>
+                <input type="email" name="mail" value="Your E-Mail"
+                       onblur="if(this.value===''){ this.value='Your E-Mail'; this.style.color='#BBB';}"
+                       onfocus="if(this.value==='Your E-Mail'){ this.value=''; this.style.color='#000';}"
+                       style="color:#BBB;" />
+            </label>
+            <br>
+            <br>
+            <label for="text_area"></label>
+            <textarea id="text_area" name="text_area" rows="6" cols="53" placeholder="Your Message" onblur="if(this.placeholder===''){ this.placeholder='Your Message'; this.style.color='#BBB';}"
+                      onfocus="if(this.placeholder==='Your Message'){ this.placeholder=''; this.style.color='#000';}"
+                      style="color:#BBB;"></textarea>
+
+        </form>
     </div>
     <footer class="footer-distributed">
 
