@@ -105,6 +105,12 @@ nav ul li a {
     .menu-icon {
         display: block;
     }
+    header {
+
+        background-image: url("../images/back3.jpg");
+        width: 600px;
+        background-size: cover;
+    }
 
 }
 
@@ -231,8 +237,8 @@ nav ul li a {
 /* Position the front and back side */
 .flip-card-front, .flip-card-back {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width:580px;
+    height:450px;
     -webkit-backface-visibility: hidden; /* Safari */
     backface-visibility: hidden;
 }
@@ -260,11 +266,15 @@ nav ul li a {
 ;
 }
 /* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 600px) {
-    .column {
-        width: 100%;
-        display: block;
-        margin-bottom: 20px;
+@media screen and (max-width: 768px) {
+    .card{
+        position: relative;
+        width: 600px;
+
+    }
+    .align1{
+        align-items: center;
+        justify-content: center;
     }
 }
 
@@ -309,11 +319,15 @@ nav ul li a {
 #about{
     display: block;
 }
-#about-phone{
-    display: none;
-    background-image: url("../images/back9.jpg");
-    background-repeat: no-repeat;
+@media screen and (max-width: 768px) {
+    #about-phone{
+        display: none;
+        background-image: url("../images/back9.jpg");
+        width: 600px;
+        background-repeat: no-repeat;
+    }
 }
+
 .about-head-phone{
     color: black;
     margin-top: 120px;
@@ -376,7 +390,7 @@ nav ul li a {
 #slider {
     height: 25vw;
     position: relative;
-    margin-top: -400px;
+    top:-130px;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
@@ -440,10 +454,54 @@ nav ul li a {
     }
 }
 
-@media(max-width: 786px){
+
+#contact-id{
+    display: block;
+}
+#contact-phone{
+    display: none;
+}
+@media screen and (max-width: 768px) {
+    #contact-id{
+        display: none;
+    }
+    #contact-phone{
+        display: block;
+    }
+}
+#contact-phone>h1{
+    color: blue;
+    font-family: 'Alegreya', serif;
+    margin-left: 60px;
+    margin-top: -40px;
+    font-size: 60px;
+    text-decoration: none;
+    border-bottom: 4px solid #1f1bff;
+    width: 280px;
 
 }
-.contact>h1{
+
+.contact-img{
+
+}
+.contact-form{
+    box-shadow:
+            inset 0 -3em 3em rgba(0,0,0,0.1),
+            0 0  0 2px rgb(255,255,255),
+            0.3em 0.3em 1em rgba(0,0,0,0.3);
+    padding: 20px;
+}
+.contact-form>form>label>input{
+    width: 430px;
+    height: 40px;
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid ;
+}
+.contact-form>form>label>textarea{
+    border: 4px solid;
+}
+.contact>h1 {
     color: blue;
     font-family: 'Alegreya', serif;
     margin-left: 350px;
@@ -452,8 +510,6 @@ nav ul li a {
     text-decoration: none;
     border-bottom: 4px solid #1f1bff;
     width: 280px;
-
-
 }
 .contact > img{
     position:relative;
@@ -463,6 +519,7 @@ nav ul li a {
     top: 40px;
 }
 .contact>form{
+    background-image: url("../images/test.jpg");
     position: relative;
     float: right;
     right: 320px;
@@ -475,6 +532,7 @@ nav ul li a {
 }
 .contact>form>textarea{
     border: 4px solid;
+    background-image: url("../images/test.jpg");
 }
 .contact>form>label>input{
     width: 500px;

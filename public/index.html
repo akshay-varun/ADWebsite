@@ -182,6 +182,8 @@
         <label for="s5" id="slide5"></label>
     </section>
     </div>
+
+    <div id="contact-id">
     <div class="contact">
         <h1>Write to us</h1>
         <img src="images/contact.jpg" style="width: 700px;height: 450px;">
@@ -209,6 +211,41 @@
                       style="color:#BBB;"></textarea>
 
         </form>
+    </div>
+    </div>
+
+
+    <div id="contact-phone">
+        <h1>Write to us</h1>
+        <div class="contact-img">
+                <div class="contact-form">
+                    <form>
+                        <label>
+                            <input type="text" name="name" value="Your Name"
+                                   onblur="if(this.value===''){ this.value='Your Name'; this.style.color='#BBB';}"
+                                   onfocus="if(this.value==='Your Name'){ this.value=''; this.style.color='#000';}"
+                                   style="color:#BBB;" />
+                        </label>
+                        <br>
+                        <br>
+                        <br>
+                        <label>
+                            <input type="email" name="mail" value="Your E-Mail"
+                                   onblur="if(this.value===''){ this.value='Your E-Mail'; this.style.color='#BBB';}"
+                                   onfocus="if(this.value==='Your E-Mail'){ this.value=''; this.style.color='#000';}"
+                                   style="color:#BBB;" />
+                        </label>
+                        <br>
+                        <br>
+                        <label for="text_area"></label>
+                        <textarea id="text_area1" name="text_area" rows="6" cols="46" placeholder="Your Message" onblur="if(this.placeholder===''){ this.placeholder='Your Message'; this.style.color='#BBB';}"
+                                  onfocus="if(this.placeholder==='Your Message'){ this.placeholder=''; this.style.color='#000';}"
+                                  style="color:#BBB;"></textarea>
+
+                    </form>
+                </div>
+
+        </div>
     </div>
     <footer class="footer-distributed">
 
