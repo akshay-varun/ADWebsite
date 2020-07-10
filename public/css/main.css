@@ -529,7 +529,8 @@ margin-left: 300px;
 
 
 #contact-id{
-    display: block;
+    margin:0 auto;
+    max-width:1200px;
 }
 #contact-phone{
     display: none;
@@ -575,23 +576,25 @@ margin-left: 300px;
     border: 4px solid;
 }
 .contact>h1 {
+    grid-column: col-start 2;
+    grid-row: row-start 5;
     color: blue;
     font-family: 'Alegreya', serif;
     font-size: 60px;
     text-decoration: none;
-    border-bottom: 4px solid #1f1bff;
+    /*border-bottom: 4px solid #1f1bff;*/
     width: 280px;
 }
 .contact > img{
-    grid-column: col-start 3;
-    grid-row: row-start 5;
+    grid-column: col-start 2;
+    grid-row: row-start 6;
     width: 700px;
     height: 450px;
 
 }
 .contact>form{
-    grid-column: col-start 4 /span 10;
-    grid-row: row-start 5;
+    grid-column: col-start 3 /span 8;
+    grid-row: row-start 6;
     padding: 30px;
 }
 .contact>form>textarea{
