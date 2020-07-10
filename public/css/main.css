@@ -1,3 +1,11 @@
+.App{
+    margin:0 auto;
+}
+body {
+    width: 100%;
+    height: 100%;
+    margin:0 auto;
+}
 header {
     width: 100%;
     height: 100vh;
@@ -37,7 +45,6 @@ nav ul {
     background: rgba(0, 0, 0, 0);
     overflow: hidden;
     color: #fff;
-    padding: 0;
     text-align: right;
     margin: 0;
     padding-right: 40px;
@@ -74,8 +81,11 @@ nav ul li a {
     display: none;
 }
 
-@media(max-width: 786px) {
-
+@media(max-width: 786px ) {
+    
+    .menu{
+        height: 40px;
+    }
     .logo {
         position: fixed;
         top: 0;
@@ -83,7 +93,7 @@ nav ul li a {
     }
 
     nav ul {
-        max-height: 0px;
+        max-height: 5px;
         background: #000;
     }
 
@@ -108,7 +118,7 @@ nav ul li a {
     header {
 
         background-image: url("../images/back3.jpg");
-        width: 650px;
+        width: 100%;
         background-size: cover;
     }
 
@@ -141,16 +151,26 @@ nav ul li a {
 
 * { color:#fff; text-decoration: none;}
 
-.ad1{
+#ad1{
     position: absolute;
-    margin-top: 200px;
+    margin-top: 10px;
     margin-left: 20px;
+    display: block;
 }
 
-.ad2{
+#ad2{
+    position: absolute;
     float: right;
-    margin-top: 200px;
-    margin-right: 10px;
+    right: 30px;
+    display:block;
+    top:1550px;
+}
+
+#admob1{
+    display: block;
+}
+#admob2{
+    display: none;
 }
 
 .flex-container {
@@ -158,45 +178,48 @@ nav ul li a {
     flex-direction: row;
     align-items: center;
     margin: 30px;
-
 }
 
 .align1{
-    margin-left: 300px;
+margin-left: 300px;
 }
 .align2{
     position: relative;
-    left: 100px;
+    left: 180px;
     top: 20px;
+
+}
+.flip-card-front>img{
+    width: 580px;
+    height: 450px;
+}
+.flip-card-back>img{
+    width: 580px;
+    height: 450px;
 }
 
-.align3{
-    margin-top: 40px;
-    margin-left: 300px;
+#flip-phone{
+    display: none;
 }
 
-.align4{
-    margin-left: 300px;
-}
-.card-position1{
-    position: relative;
-    margin-left: 18%;
-    margin-top: 2%;
-}
-@media (max-width: 767px)
+
+@media (max-width: 786px)
 {
     .flex-container {
         display: flex;
         flex-direction: column;
-        margin: 40px;
     }
     .align1{
-        margin: 10px;
+        margin-top: 20px;
     }
+
+
     .align2{
-        position: relative;
-        left: 6px;
-        top: 100px;
+        margin-left: -50px;
+    }
+    
+    .flex-container>card {
+
     }
     .align3{
         margin-top: 60px;
@@ -206,20 +229,89 @@ nav ul li a {
     .align4{
         margin-left: 20px;
     }
+    #ad1{
+        display: none;
+    }
+    #ad2{
+        display: none;
+    }
+    #flip-phone{
+        display:block;
+    }
+    #flip-card-phone>img{
+        width: 100%;
+        height: 300px;
+    }
+    #flip-dektop{
+        display: none;
+    }
 
+
+}
+
+@media screen and (max-width: 1060px) {
+
+    .align1{
+        margin-left: 20px;
+
+    }
+
+    .align2{
+        margin-left: -160px;
+    }
+
+    .flex-container>card {
+
+    }
+    .align3{
+        margin-top: 60px;
+        margin-left: 10px;
+
+    }
+    .align4{
+        margin-left: 20px;
+    }
+    #ad1{
+        display: none;
+    }
+    #ad2{
+        display: none;
+    }
+
+    #flip-card-phone>img{
+        width: 100%;
+        height: 300px;
+    }
+
+
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(12, [col-start] 1fr);
+    grid-template-rows: repeat(10, [row-start] 50px);
+    grid-gap:20px;
+    -ms-grid-column-align: center;
+}
+.card{
+    grid-column: col-start 9 / 12;
+    grid-row: row-start 2;
+    grid-gap: 2px;
+    max-width: 500px;
+    height:300px;
+    background-color: #F6F6F8;
 }
 
 .flip-card {
-    /* position: relative;
-     left: 25%;
-     top: 100px;*/
+    grid-column: col-start 4 / span 6;
+    grid-row: row-start 2;
     background-color: transparent;
-    width:580px;height:420px;
+    width:580px;
+    height:420px;
     border: 1px solid #f1f1f1;
-    perspective: 1000px; /* Remove this if you don't want the 3D effect */
+    perspective: 1000px;
 }
 
-/* This container is needed to position the front and back side */
 .flip-card-inner {
     position: relative;
     width: 100%;
@@ -263,22 +355,7 @@ nav ul li a {
     position: absolute;
     top: 5px;
     left: 180%;
-;
 }
-/* Responsive columns - one column layout (vertical) on small screens */
-@media screen and (max-width: 768px) {
-    .card{
-        position: relative;
-        width: 600px;
-
-    }
-    .align1{
-        align-items: center;
-        justify-content: center;
-    }
-}
-
-
 .dot1 {
     height: 25px;
     width: 25px;
@@ -309,16 +386,10 @@ nav ul li a {
     background-color: #bbbbbb;
 }
 
-.background{
-
-}
 [type=radio] {
     display: none;
 }
 
-#about{
-    display: block;
-}
 #about-phone{
     display: none;
 }
@@ -326,22 +397,21 @@ nav ul li a {
     #about-phone{
         display: none;
         background-image: url("../images/back9.jpg");
-        width: 650px;
+        width: 400px;
+        height:585px;
         background-repeat: no-repeat;
     }
 }
-
 .about-head-phone{
     color: black;
-    margin-top: 120px;
+    margin-top: 60px;
     margin-left: 100px;
     font-family: 'Acme', sans-serif;
 
  }
 .about-descrpition-phone{
-    width: 500px;
-    height: 500px;
-    margin-left:100px;
+    width: 100%;
+    height: 480px;
     font-family: 'Itim', cursive;
 
 
@@ -356,19 +426,18 @@ nav ul li a {
 }
 
 .about-background{
+    grid-column: col-start 7    ;
+    grid-row:row-start 1;
     background-image: url("../images/back8.jpg");
-    width: 1245px;
+    width: 1500px;
     height: 769px;
-    position: relative;
-    margin-left: 300px;
-    top: 100px;
     background-repeat: no-repeat;
     opacity: 80%;
 }
 .about-head{
     position: relative;
     top: 200px;
-    margin-left: 200px;
+    margin-left: 100px;
     font-family: 'Acme', sans-serif;
     font-size: 80px;
     color: black;
@@ -378,22 +447,20 @@ nav ul li a {
     color: black;
     width: 700px;
     position: relative;
-    left: 800px;
+    margin-left: 500px ;
     font-size:25px;
     font-family: 'PT Sans', sans-serif;
-    top: -550px;
-}
 
-.slide1{
-    color: black;
-    font-weight: bolder;
-    font-size: 36px;
-    margin-left: 430px;
+}
+#product{
+    position: relative;
+    left: -100px;
 }
 #slider {
-    height: 25vw;
     position: relative;
-    top:-130px;
+    top: 200px;
+    left: 100px;
+    height: 25vw;
     perspective: 1000px;
     transform-style: preserve-3d;
 }
@@ -444,16 +511,19 @@ nav ul li a {
     transform: translate3d(30%,0,-200px);
 }
 
-#slide1 { background-image: url("../images/slide1.jpg") }
-#slide2 { background-image: url("../images/slide2.jpg");}
-#slide3 { background-image: url("../images/slide3.jpg");}
-#slide4 { background-image: url("../images/slide4.jpg");}
-#slide5 { background-image: url("../images/slide5.jpg") }
+#slide1 { background-image: url("../images/slide1.jpg"); background-repeat: no-repeat;background-position: center;background-size: cover;}
+#slide2 { background-image: url("../images/slide2.jpg"); background-repeat: no-repeat;background-position: center;background-size: cover;}
+#slide3 { background-image: url("../images/slide3.jpg"); background-repeat: no-repeat;background-position: center;background-size: cover;}
+#slide4 { background-image: url("../images/slide4.jpg"); background-repeat: no-repeat;background-position: center;background-size: cover;}
+#slide5 { background-image: url("../images/slide5.jpg"); background-repeat: no-repeat;background-position: center;background-size: cover;}
 
-@media (max-width:767px)  {
+@media (max-width:786px)  {
     #slider{
-        margin-top: 120px;
-        height: 40vw;
+   height: 200px;
+        position:relative;
+        width:400px;
+        top: 50px;
+        left: 80px;
     }
 }
 
@@ -507,35 +577,27 @@ nav ul li a {
 .contact>h1 {
     color: blue;
     font-family: 'Alegreya', serif;
-    margin-left: 350px;
-    margin-top: 60px;
     font-size: 60px;
     text-decoration: none;
     border-bottom: 4px solid #1f1bff;
     width: 280px;
 }
 .contact > img{
-    position:relative;
-    left:200px;
+    grid-column: col-start 3;
+    grid-row: row-start 5;
     width: 700px;
     height: 450px;
-    top: 40px;
+
 }
 .contact>form{
-    background-image: url("../images/test.jpg");
-    position: relative;
-    float: right;
-    right: 320px;
-    top: 80px;
-    box-shadow:
-            inset 0 -3em 3em rgba(0,0,0,0.1),
-            0 0  0 2px rgb(255,255,255),
-            0.3em 0.3em 1em rgba(0,0,0,0.3);
+    grid-column: col-start 4 /span 10;
+    grid-row: row-start 5;
     padding: 30px;
 }
 .contact>form>textarea{
-    border: 4px solid;
-    background-image: url("../images/test.jpg");
+    background: transparent;
+    border: none;
+    border-bottom: 4px solid;
 }
 .contact>form>label>input{
     width: 500px;

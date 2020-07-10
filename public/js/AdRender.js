@@ -1,5 +1,5 @@
 function getRandomImage() {
-    var images = ["images/ads/FRUITS.png", "images/ads/SPORTS.png"];
+    var images = ["images/ads/fruity.png", "images/ads/fashion.png"];
     var image = images[Math.floor(Math.random()*images.length)];
     return image;
 }
