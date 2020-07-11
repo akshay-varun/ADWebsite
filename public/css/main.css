@@ -609,6 +609,10 @@ margin-left: 300px;
     border: none;
     border-bottom: 4px solid ;
 }
+.page-footer{
+position: relative;
+    top: 200px;
+}
 
 
 
